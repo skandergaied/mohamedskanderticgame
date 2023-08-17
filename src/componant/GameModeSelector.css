@@ -1,0 +1,23 @@
+
+
+/* Style specifically for elements within the GameModeSelector component */
+.game-mode-selector h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.game-mode-selector button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.game-mode-selector button:hover {
+    background-color: #0056b3;
+}

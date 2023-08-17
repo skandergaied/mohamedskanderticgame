@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Game from './componant/gamerun';
+import Cell from './componant/cell';
+import Signin from './componant/signin';
+import Scoreboard from './componant/scoreborad';
+import Login from './componant/Login';
+import './index.css'
+import GameModeSelector from './componant/GameModeSelector';
+const App = () => {
 
-function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div >
+        <Routes>
+          <Route path="/game" element={<Game />} />
+          <Route path="/cell" element={<Cell />} />
+          <Route path="/Signin" element={<Signin />} />
+          <Route path="/scoreboard" element={<Scoreboard/>} />
+          <Route path="/" element={<Login/>} />
+          <Route path="/GameModeSelector" element={<GameModeSelector/>} />
+        </Routes>
+      </div>
   );
-}
+
+
+};
 
 export default App;
